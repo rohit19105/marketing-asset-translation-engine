@@ -6,6 +6,9 @@ from models.quality_result import QualityResult
 from prompts.quality_prompt import QUALITY_PROMPT
 from utils.glossary_formatter import GlossaryFormatter
 
+import logging
+
+logger = logging.getLogger(__name__)
 
 class QualityAgent(BaseAgent):
     """
@@ -34,5 +37,7 @@ class QualityAgent(BaseAgent):
                 "glossary_rules": glossary_rules
             }
         )
+
+        logger.info("Quality result | segment=%s | result=%s", segment.segment_id, result)
 
         return result

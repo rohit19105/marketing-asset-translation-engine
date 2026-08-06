@@ -80,7 +80,7 @@ class Workflow:
 
         if not (os.path.exists(output_path) and os.path.exists(report_path)):
 
-            logger.info("job_id=%s | Cached result found", job.job_id)
+            logger.info("job_id=%s | No cached result found", job.job_id)
             return None
 
         with open(report_path, "r", encoding="utf-8") as file:
@@ -105,7 +105,7 @@ class Workflow:
         :param job_file: JSON filename present in data/translation_jobs.
         :return: Tuple containing the translated HTML output path and the TranslationReport.
         """
-        MAX_SEGMENTS_TO_PROCESS = 100 # TODO
+        MAX_SEGMENTS_TO_PROCESS = 7 #Modify For Testing
         
         # 1. Load translation job
         job_path = os.path.join(TRANSLATION_JOBS_DIR, job_file)
@@ -129,7 +129,7 @@ class Workflow:
         cached_result = self._get_cached_result(job)
 
         if cached_result:
-            print(f"Cached result found for {job.job_id}")
+            logger.info("job_id=%s | Cached result found", job.job_id)
             return cached_result
 
 

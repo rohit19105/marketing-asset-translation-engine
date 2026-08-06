@@ -16,13 +16,11 @@ class Segment(BaseModel):
 	segment_id: str
 	source_text: str
 	source_html: Optional[str] = None
-	translated_text: Optional[str] = None
+	translated_text: str | None = None
 
 	glossary_matches: list[GlossaryTerm] = Field(default_factory=list)
 	tm_match: Optional[TranslationMemoryEntry] = None
 
-
-	translated_text: str | None = None
 	quality_result: QualityResult | None = None
 	confidence_score: float | None = None
 	requires_human_review: bool = False
