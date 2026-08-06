@@ -1,0 +1,12 @@
+{
+    "job_id": "JOB-003",
+    "asset_name": "lorem-ipsum.html",
+    "source_language": "English",
+    "target_language": "Spanish",
+    "total_segments": 2,
+    "tm_hits": 0,
+    "ai_translations": 2,
+    "human_reviews": 0,
+    "average_confidence": 0.98,
+    "estimated_tokens_saved": 0
+}

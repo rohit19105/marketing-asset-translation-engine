@@ -1,0 +1,12 @@
+{
+    "job_id": "JOB-001",
+    "title": "Translate AI Development Page",
+    "source_language": "English",
+    "target_language": "Spanish",
+    "asset_type": "HTML",
+    "asset_name": "platform-ai-development.html",
+    "requested_by": "Marketing Team",
+    "priority": "High",
+    "status": "Pending",
+    "created_at": "2026-08-05"
+}

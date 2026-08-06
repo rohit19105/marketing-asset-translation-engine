@@ -1,0 +1,12 @@
+{
+    "job_id": "JOB-002",
+    "asset_name": "platform-context-model.html",
+    "source_language": "English",
+    "target_language": "Spanish",
+    "total_segments": 3,
+    "tm_hits": 0,
+    "ai_translations": 3,
+    "human_reviews": 3,
+    "average_confidence": 1.0,
+    "estimated_tokens_saved": 0
+}

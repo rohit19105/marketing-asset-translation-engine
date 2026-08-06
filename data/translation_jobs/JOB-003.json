@@ -1,0 +1,12 @@
+{
+    "job_id": "JOB-003",
+    "title": "Lorem Ipsum Text",
+    "source_language": "English",
+    "target_language": "Spanish",
+    "asset_type": "HTML",
+    "asset_name": "lorem-ipsum.html",
+    "requested_by": "Marketing Team",
+    "priority": "High",
+    "status": "Pending",
+    "created_at": "2026-08-07"
+}

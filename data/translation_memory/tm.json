@@ -1,0 +1,17 @@
+ORIGINAL TM JSON
+[
+    {
+        "source_text": "Talk to a Celonis expert",
+        "translated_text": "Habla con un experto de Celonis",
+        "source_language": "English",
+        "target_language": "Spanish",
+        "human_approved": true
+    },
+    {
+        "source_text": "Learn more",
+        "translated_text": "Más información",
+        "source_language": "English",
+        "target_language": "Spanish",
+        "human_approved": true
+    }
+]
