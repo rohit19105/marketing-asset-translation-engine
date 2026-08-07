@@ -1,7 +1,7 @@
+from config import OUTPUTS_DIR, TRANSLATION_JOBS_DIR, TRANSLATION_MEMORY_DIR
+from processors.tm_processor import TMProcessor
 import os
 import json
-from processors.tm_processor import TMProcessor
-from config import OUTPUTS_DIR, TRANSLATION_JOBS_DIR
 
 class HumanReviewService:
     """
@@ -128,7 +128,7 @@ class HumanReviewService:
 
         job_data = self._load_job(job_id)
 
-        tm_path = os.path.join(base_path, "data", "translation_memory", "tm.json")
+        tm_path = os.path.join(TRANSLATION_MEMORY_DIR, "tm.json")
 
         self.tm_processor.add_entry(
         tm_path=tm_path,

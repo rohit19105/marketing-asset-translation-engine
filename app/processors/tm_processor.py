@@ -78,7 +78,6 @@ class TMProcessor:
         tm_entries: list[TranslationMemoryEntry]
     ) -> TranslationMemoryEntry | None:
         """
-        TODO
         Finds a human-approved exact match in Translation Memory.
 
         Matches entries using source text, source language, and target

@@ -28,6 +28,13 @@ Human-approved corrections are applied to the translated HTML and stored in Tran
 
 The engine follows a modular translation pipeline that prioritizes reusable human-approved translations before invoking the LLM and routes uncertain translations for human review.
 
+<p align="center">
+    <img src="docs/assets/proposed_architecture.png"
+         width="850"/>
+</p>
+
+The execution workflow implemented by the application is shown below, illustrating the sequence of operations performed for each translation job.
+
 ```mermaid
 flowchart TD
     A[Translation Job] --> B[Load HTML Asset]

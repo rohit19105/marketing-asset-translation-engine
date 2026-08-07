@@ -1,18 +1,18 @@
+from services.confidence_calculator import ConfidenceCalculator
 from processors.glossary_processor import GlossaryProcessor
+from graph.quality_review_graph import QualityReviewGraph
+from models.translation_report import TranslationReport
 from agents.translation_agent import TranslationAgent
-from agents.quality_agent import QualityAgent
 from processors.html_processor import HTMLProcessor
 from models.translation_job import TranslationJob
 from processors.tm_processor import TMProcessor
+from agents.quality_agent import QualityAgent
 from services.llm_factory import LLMFactory
+from models.human_review import HumanReview
 from models.segment import Segment
+import logging
 import json
 import os
-from models.human_review import HumanReview
-from services.confidence_calculator import ConfidenceCalculator
-from services.review_policy import ReviewPolicy
-from models.translation_report import TranslationReport
-from graph.quality_review_graph import QualityReviewGraph
 from config import (
     OUTPUTS_DIR, 
     TRANSLATION_JOBS_DIR,
@@ -20,7 +20,7 @@ from config import (
     GLOSSARY_PATH,
     TM_PATH
     )
-import logging
+
 
 logger = logging.getLogger(__name__)
 
@@ -284,7 +284,7 @@ class Workflow:
             segment.requires_human_review
         )
 
-        return segment #TEMP DELET
+        return segment
 
 
         # -------------------------------

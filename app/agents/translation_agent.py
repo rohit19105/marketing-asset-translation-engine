@@ -7,7 +7,6 @@ from models.segment import Segment
 
 class TranslationAgent(BaseAgent):
     """
-    TODO
     Translates grounded marketing segments using an LLM.
 
     Applies matched glossary constraints and returns structured
